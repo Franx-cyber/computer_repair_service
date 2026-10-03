@@ -1,0 +1,398 @@
+/* =========================================
+   GENERAL SETTINGS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #111111;
+
+    color: white;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+
+    background: linear-gradient(
+        135deg,
+        #008cff,
+        #0066cc,
+        #003f7f
+    );
+
+    padding: 70px 20px;
+
+    text-align: center;
+}
+
+
+.header-content {
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+
+header h1 {
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+
+    color: white;
+}
+
+
+header p {
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+
+    color: #eeeeee;
+}
+
+
+/* HEADER BUTTON */
+
+.header-button {
+
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background-color: white;
+
+    color: #0066cc;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+
+.header-button:hover {
+
+    background-color: #eeeeee;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+main {
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.section {
+
+    padding: 50px 0;
+}
+
+
+.section h2 {
+
+    color: #00aaff;
+
+    font-size: 30px;
+
+    border-bottom: 2px solid #00aaff;
+
+    padding-bottom: 8px;
+
+    margin-bottom: 10px;
+}
+
+
+.section-description {
+
+    color: #cccccc;
+
+    margin-bottom: 25px;
+}
+
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.table-container {
+
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: #181818;
+}
+
+
+/* TABLE HEADER */
+
+th {
+
+    background-color: #24679a;
+
+    color: white;
+
+    padding: 14px;
+
+    text-align: left;
+
+    border: 1px solid #dddddd;
+}
+
+
+/* TABLE DATA */
+
+td {
+
+    padding: 14px;
+
+    border: 1px solid #aaaaaa;
+
+    color: #eeeeee;
+}
+
+
+/* Alternating rows */
+
+tbody tr:nth-child(even) {
+
+    background-color: #202020;
+}
+
+
+/* Hover effect */
+
+tbody tr:hover {
+
+    background-color: #292929;
+}
+
+
+/* Price column */
+
+td:last-child {
+
+    color: #00b7ff;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+
+/* =========================================
+   FORM SECTION
+========================================= */
+
+.form-section {
+
+    padding-top: 20px;
+
+    padding-bottom: 60px;
+}
+
+
+form {
+
+    background-color: #181818;
+
+    padding: 30px;
+
+    border: 1px solid #333333;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* =========================================
+   FORM GROUPS
+========================================= */
+
+.form-group {
+
+    margin-bottom: 22px;
+}
+
+
+.form-group > label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 13px;
+
+    background-color: white;
+
+    color: #222222;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+/* Input focus effect */
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    border: 2px solid #00aaff;
+}
+
+
+textarea {
+
+    resize: vertical;
+
+    min-height: 130px;
+}
+
+
+
+/* =========================================
+   RADIO BUTTONS
+========================================= */
+
+.radio-group {
+
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+
+/* =========================================
+   CHECKBOXES
+========================================= */
+
+.checkbox-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.option {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #dddddd;
+
+    cursor: pointer;
+}
+
+
+.option input {
+
+    width: 17px;
+
+    height: 17px;
+
+    cursor: pointer;
+}
+
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.button-container {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}

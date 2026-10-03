@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Computer Repair Service</title>
+
+    <!-- Connects the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="header-content">
+
+            <h1>Computer Repair Service</h1>
+
+            <p>
+                Professional computer repair and technical
+                support for your devices.
+            </p>
+
+            <!-- Jumps to the form -->
+            <a href="#request" class="header-button">
+                Request a Service
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+
+        <!-- ================= REPAIR SERVICES ================= -->
+
+        <section class="section">
+
+            <h2>Repair Services</h2>
+
+            <p class="section-description">
+                Choose from our available computer repair
+                and maintenance services.
+            </p>
+
+
+            <!-- Makes the table scrollable on small screens -->
+
+            <div class="table-container">
+
+                <table>
+
+                    <!-- TABLE HEADER -->
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Service</th>
+
+                            <th>Description</th>
+
+                            <th>Estimated Price</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <!-- TABLE BODY -->
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                <strong>System Diagnostics</strong>
+                            </td>
+
+                            <td>
+                                Check the device for hardware
+                                and software problems.
+                            </td>
+
+                            <td>₱300</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>Virus &amp; Malware Removal</strong>
+                            </td>
+
+                            <td>
+                                Remove harmful viruses and
+                                improve system security.
+                            </td>
+
+                            <td>₱500</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>Wi-Fi Troubleshooting</strong>
+                            </td>
+
+                            <td>
+                                Diagnose and fix internet or
+                                wireless connection problems.
+                            </td>
+
+                            <td>₱500</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>Computer Cleaning</strong>
+                            </td>
+
+                            <td>
+                                Cleaning dust from fans,
+                                vents, and internal components.
+                            </td>
+
+                            <td>₱700</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>Operating System Installation</strong>
+                            </td>
+
+                            <td>
+                                Install or reinstall a supported
+                                operating system.
+                            </td>
+
+                            <td>₱800</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>Hardware Repair</strong>
+                            </td>
+
+                            <td>
+                                Repair or replace damaged
+                                computer components.
+                            </td>
+
+                            <td>₱1,000+</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>Data Recovery</strong>
+                            </td>
+
+                            <td>
+                                Attempt to recover important
+                                files from damaged storage.
+                            </td>
+
+                            <td>₱1,000+</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SERVICE REQUEST FORM ================= -->
+
+        <section
+            class="section form-section"
+            id="request"
+        >
+
+            <h2>Service Request Form</h2>
+
+            <p class="section-description">
+                Fill out the form below to request a
+                computer repair service.
+            </p>
+
+
+            <form>
+
+
+                <!-- CUSTOMER NAME -->
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Customer Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@email.com"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- CONTACT NUMBER -->
+
+                <div class="form-group">
+
+                    <label for="contact">
+                        Contact Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="contact"
+                        name="contact"
+                        placeholder="09XXXXXXXXX"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- DEVICE TYPE -->
+
+                <div class="form-group">
+
+                    <label for="device">
+                        Device Type
+                    </label>
+
+                    <select
+                        id="device"
+                        name="device"
+                        required
+                    >
+
+                        <option value="">
+                            -- Select Device Type --
+                        </option>
+
+                        <option value="desktop">
+                            Desktop Computer
+                        </option>
+
+                        <option value="laptop">
+                            Laptop
+                        </option>
+
+                        <option value="tablet">
+                            Tablet
+                        </option>
+
+                        <option value="printer">
+                            Printer
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- PREFERRED SERVICE -->
+
+                <div class="form-group">
+
+                    <label for="service">
+                        Preferred Service
+                    </label>
+
+                    <select
+                        id="service"
+                        name="service"
+                        required
+                    >
+
+                        <option value="">
+                            -- Select Service --
+                        </option>
+
+                        <option value="diagnostics">
+                            System Diagnostics
+                        </option>
+
+                        <option value="virus">
+                            Virus &amp; Malware Removal
+                        </option>
+
+                        <option value="wifi">
+                            Wi-Fi Troubleshooting
+                        </option>
+
+                        <option value="cleaning">
+                            Computer Cleaning
+                        </option>
+
+                        <option value="os">
+                            Operating System Installation
+                        </option>
+
+                        <option value="hardware">
+                            Hardware Repair
+                        </option>
+
+                        <option value="recovery">
+                            Data Recovery
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- SERVICE PRIORITY -->
+
+                <div class="form-group">
+
+                    <label>
+                        Service Priority
+                    </label>
+
+
+                    <div class="radio-group">
+
+                        <label class="option">
+
+                            <input
+                                type="radio"
+                                name="priority"
+                                value="low"
+                                checked
+                            >
+
+                            Low
+
+                        </label>
+
+
+                        <label class="option">
+
+                            <input
+                                type="radio"
+                                name="priority"
+                                value="normal"
+                            >
+
+                            Normal
+
+                        </label>
+
+
+                        <label class="option">
+
+                            <input
+                                type="radio"
+                                name="priority"
+                                value="urgent"
+                            >
+
+                            Urgent
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ADDITIONAL SERVICES -->
+
+                <div class="form-group">
+
+                    <label>
+                        Additional Services
+                    </label>
+
+
+                    <div class="checkbox-group">
+
+                        <label class="option">
+
+                            <input
+                                type="checkbox"
+                                name="additional"
+                                value="backup"
+                            >
+
+                            Data Backup
+
+                        </label>
+
+
+                        <label class="option">
+
+                            <input
+                                type="checkbox"
+                                name="additional"
+                                value="software"
+                            >
+
+                            Software Installation
+
+                        </label>
+
+
+                        <label class="option">
+
+                            <input
+                                type="checkbox"
+                                name="additional"
+                                value="cleaning"
+                            >
+
+                            Internal Cleaning
+
+                        </label>
+
+
+                        <label class="option">
+
+                            <input
+                                type="checkbox"
+                                name="additional"
+                                value="testing"
+                            >
+
+                            Performance Testing
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PREFERRED DATE -->
+
+                <div class="form-group">
+
+                    <label for="date">
+                        Preferred Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- PROBLEM DESCRIPTION -->
+
+                <div class="form-group">
+
+                    <label for="problem">
+                        Problem Description
+                    </label>
+
+                    <textarea
+                        id="problem"
+                        name="problem"
+                        rows="6"
+                        placeholder="Describe the problem with your device..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- BUTTONS -->
+
+                <div class="button-container">
+
+                    <button
+                        type="submit"
+                        class="submit-button"
+                    >
+                        Submit Request
+                    </button>
+
+
+                    <button
+                        type="reset"
+                        class="reset-button"
+                    >
+                        Reset
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Computer Repair Service
+        </p>
+
+        <p>
+            Reliable • Affordable • Professional
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
